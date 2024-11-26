@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        [class|='main']{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin-left: 20px;
+            padding-top: 20px;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            text-align: center;
+            align-content: center;
+
+        }
+        [class^='sub']{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            margin-left: 20px;
+            margin-top: 20px;
+            border-radius:50%;
+            text-align: center;
+            align-content: center;
+            
+
+        }
+        .button{
+            width: 100px;
+            background-color: chartreuse;
+            margin-top: 20px;
+            border-top-left-radius: 10%;
+            border-top-right-radius: 10%;
+            border-bottom-left-radius: 10%;
+            border-bottom-right-radius: 10%;
+        }
+        #search{
+            width: 20%;
+            height: 20%;
+            border-radius: 20px;
+            
+        }
+        .image {
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            margin-left: 20px;
+        }
+        [class~='box']{
+            margin-top: 20px;
+            border: 20px solid red;
+            width: 200px;
+            height: 200px;
+            background-color:pink;
+            border-color: chartreuse;
+            border-radius: 20px;
+            text-align: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model in HTML</h1>
+    <h2>Small Box Model</h2>
+    <div class="main">Lorem Ipsum has been the text</div>
+    <h2>Border color</h2>
+    <div class="model box">Lorem Ipsum has been the text</div>
+    <h2>Large Box Model</h2>
+    <div class="sub model">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
+    <h2>Image</h2>
+    <figure>
+        <img src="../images/image10.jpeg" alt="image" class="image"/>
+    </figure>
+    <h2>Search/Clear button</h2>
+    <input type="search" id="search" value="search"/>
+    <button type="button" class="button" name="button" value="Clear">Clear</button>
+  
+   
+</body>
+</html>

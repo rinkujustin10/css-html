@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: greenyellow;
+            height: 900px;
+        }
+        [class^='main']{
+            border: 2px solid palevioletred;
+            padding: 20px;
+            width: 300px;
+            height: 350px;
+            background-image: url(../images/image10.jpeg);
+            background-repeat: no-repeat;
+            color: beige;
+            background-color: black;
+            background-position: bottom;
+            text-align: center;
+            background-attachment: scroll;
+        }
+        [class*='sub']{
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            position: absolute;
+            left: 400px;
+            top: 80px;
+            background-color: black;
+            background-position: top;
+            /* background-attachment: fixed; */
+            background-image: url(../images/image8.jpeg);
+            background-repeat: no-repeat;
+            color: bisque;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>BackGround Property</h1>
+    <div class="main-paragraph">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
+    <div class="sub paragraph">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
+    
+</body>
+</html>

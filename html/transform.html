@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        h1{
+            transform: translateX(50px);
+        }
+        div{
+            margin-left: 50px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        [class^='beach']:hover{
+            transform: translateX(50px);
+        }
+        .wild:hover{
+            transform: skew(10deg);
+            /* transform: rotate(40deg); */
+        }
+        [class~='forest']:hover{
+            transform: rotate(20deg);
+        }
+        [class|='snow']:hover{
+            transform: scale(1.2);
+        }
+        #button{
+            position: absolute;
+            /* transform: translateX(400px); */
+            left: 400px;
+            top: 400px;
+            background-color: chocolate;
+            border: none;
+            transform: rotate(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transform Property</h1>
+    <h2>Translate</h2>
+    <div class="beach image">
+    <img src="../images/image1.jpeg" alt="image1"/>
+    </div>
+    <h2>Scale</h2>
+    <div class="snow-jungle">
+    <img src="../images/image10.jpeg" alt="image10"/>
+    </div>
+    <h2>Skew</h2>
+    <div class="wild">
+    <img src="../images/image2.jpeg" alt="image2"/>
+    </div>
+    <h2>Rotate</h2>
+    <div class="dark forest">
+    <img src="../images/image3.jpeg" alt="image3"/>
+    </div>
+     <button type="button" id="button" value="click us">Click Here</button>
+
+</body>
+</html>

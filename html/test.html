@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     header{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: black;
+     }
+     header section a{ 
+        margin-top: 20px;
+        padding: 20px;
+        text-decoration: none;
+        color: white;
+
+     }
+     .main {
+        margin-top: 20px;
+        margin-bottom: 20px;
+     }
+     footer{
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin-top: 20px;
+     }
+     footer p{
+        color: white;
+     }
+     footer h1{
+        color: white;
+        padding-left: 20px;
+
+     }
+     footer li{
+        color: white;
+        padding-left: 20px;
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="../logo/logo.png" alt=""/>
+
+        </section>
+        <section style="padding-top: 30px;">
+            <a href="">Home</a>
+            <a href="">List</a>
+            <a href="">Table</a>
+            <a href="">Form</a>
+            <a href="">Meadia</a>
+            <a href="">Welcome</a>
+        </section>
+    </header>
+    <form>
+        <h1>Login form</h1>
+        <table class="main">
+            <tr>
+                <td>
+                    <label>First name:</label>
+                </td>
+                <td>
+                    <input type="text" name="text"/>
+                </td>
+            
+            </tr>
+            <tr>
+                <td>
+                    <label>Email:</label>
+                </td>
+                <td>
+                    <input type="email" name="email"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Course</label></td>
+                <td>
+                    <select>
+                        <option value="css">CSS</option>
+                        <option value="html">HTML</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Duration of the course</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="course">1 month
+                </td>
+                <td>
+                    <input type="checkbox" name="course">2 month
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender</label>
+                </td>
+                <td>
+                    <input type="radio"name="gender"/>F
+                </td>
+                <td>
+                    <input type="radio" name="gender"/>M
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit"/>
+                </td>
+                <td>
+                    <input type="reset" name="reset"/>
+                </td>
+            </tr>
+        </table>
+        <video controls muted autoplay>
+            <source src="../video/video1.mp4" type="video/mp4"/>
+        </video>
+        <audio controls muted autoplay>
+            <source src="../audio/audio1.mp3" type="audio/mp3"/>
+        </audio>
+        <h1>Tables in Html</h1>
+        <table border="4">
+            <tr>
+                <th>name</th>
+                <th>email</th>
+                <th>address</th>
+                <th colspan="2">phone</th>
+            </tr>
+            <tr>
+                <td>ammu</td>
+                <td>ammu@gmail.com</td>
+                <td rowspan="2" >kerala</td>
+                <td colspan="2">345678909</td>
+                <td>345678</td>
+            </tr>
+            <tr>
+                <td>appu</td>
+                <td>appu@gmail.com</td>
+                <td>568900</td>
+
+            </tr>
+        </table>
+        <footer>
+            <section>
+                <img src="../logo/logo.png" alt="Achievers it"/>
+                <p>AchieversIT - Provides a wide group of opportunities for freshers and Experienced candidate who can develop their skills and build their career opportunities across multiple Companies.</p>
+                
+            </section>
+            <section>
+                <h1>Company</h1>
+                <li><a="">Home</a></li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </section>
+            <section>
+                <h1>Trending Courses</h1>
+                <li><a="">Home</a></li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </section>
+            <section>
+                <h1>Contact Info</h1>
+                <li><a="">Home</a></li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </section>
+        </footer>
+    </form>
+    
+</body>
+</html>

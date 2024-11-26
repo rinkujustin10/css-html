@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+     *{
+        background-color: lawngreen;
+     }
+     .main{
+        color: blueviolet;
+     }
+     [class|='sub']{
+        color: chocolate;
+     }
+     /* [class~='list']{
+        background-color: crimson;
+     } */
+     [class$='st']{
+        color: red;
+     }
+     [class^='select']{
+        color: blue;
+     }
+     #heading2{
+        color: darkred;
+     }
+     [class*='para']{
+        color: darkcyan;
+     }
+     [class~='first']{
+        color: orchid;
+     }
+     [class|='footer']{
+        color: darkslategray;
+     }
+     #bottom-list {
+       color: brown;
+     }    
+     </style>
+</head>
+<body>
+    <h1 class="main">Selector Groups</h1>
+    <h3 class="sub-head">Subgroups of Selectors</h3>
+    <ul class="prime list">
+        <li>Universal Selector</li>
+        <li>Tag/Element Selector</li>
+        <li>Class Selector</li>
+        <li>Id Selector</li>
+        <li>Attribute Selector</li>
+        <li>Pseudo Element Selector</li>
+        <li>Pseudo Class Selector</li>
+        <li>Relationship Selector</li>
+            <ol class="select list">
+                <li>Parent Child</li>
+                <li>Sibling</li>
+            </ol>
+        <li>Grouping Selector</li>
+    </ul>
+    <h2 id="heading2">Kerala Life</h2>
+   <p class="paragraph">Let the lazy backwaters set pace to your day and village folksongs croon to your heart. Let the clarion call of the jungles awaken the wilderness in you. Bathe elephants. Discover remote festivals that leave imprints on your soul. Take your taste buds on rides through flavours they never dreamt existed. Camp in the woods lying awake listening to the symphony of Nature at night and early in the morning let the mountain mists awake you with whispered tales of long forgotten travellers...</p>
+   <table border="2" class="first table">
+    <tr>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+    </tr>
+    <tr>
+        <td>Ammu</td>
+        <td>Raju</td>
+        <td>Kerala</td>
+    </tr>
+   </table>
+   <footer>
+    <section>
+        <h1 class="footer-head">CONTACT INFO</h1>
+		<ul id="bottom-list">
+			<li>#63, 1st Floor, 16th Main, 8th Cross,BTM 1st Stage, Bangalore, India - 560029</li>
+			<li>India : +91 8431-040-457</li>
+			<li>info@achieversit.com</li>
+
+		</ul>
+    </section>
+   </footer>
+</body>
+</html>

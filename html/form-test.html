@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>
+                    <label>Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="name"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email:</label>
+                </td>
+                <td>
+                    <input type="email" name="email"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password:</label>
+                </td>
+                <td>
+                    <input type="password" name="password"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender:</label>
+                </td>
+                <td>
+                    <input type="radio" type="gender"/>F
+                </td>
+                <td>
+                    <input type="radio" type="gender"/>M
+                </td>
+                <td>
+                    <input type="radio" type="gender"/>Other
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Hobbies:</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="hobbies"/>Playing Cricket
+                </td>
+                <td>
+                    <input type="checkbox" name="hobbies"/> Cooking
+                </td>
+                <td>
+                    <input type="checkbox"  name="hobbies"/>Reading
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit"/>
+                </td>
+                <td>
+                    <input type="reset" name="reset"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

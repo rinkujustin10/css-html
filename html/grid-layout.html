@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container{
+            border: 5px solid red;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px 40px;
+            width: 700px;
+            /* height: 700px; */
+            margin-left: auto;
+            margin-right: auto;
+
+         }
+         h1{
+            text-align: center;
+         }
+        .grid-item{
+            border: 1px solid green;
+            margin: 20px;
+            /* height: 50px; */
+            text-align: center;
+            align-content: center;
+            /* width: 50px; */
+        }
+        .two{
+            grid-column: 2/4;
+            grid-row: 1/3;
+        }
+        .four{
+            grid-row: 3/5;
+        }
+       .eight{
+        grid-row: 4/6;
+        /* grid-column: 2/4; */
+       }
+        .nine{
+            grid-column: 1/3;
+            grid-row: 5/6;
+
+        }
+        .one img{
+            height: 100%;
+            width: 100%;
+        }
+        .two img{
+            width: 100%;
+            height: 100%;
+        }
+        .three img{
+            width: 100%;
+            height: 100%;
+        }
+        .four img{
+            width: 100%;
+            height: 100%;
+        }
+        .five img{
+            width: 100%;
+            height: 100%;
+        }
+        .six img{
+            width: 100%;
+            height: 100%;
+        }
+        .seven img{
+            width: 100%;
+            height: 100%;
+        }
+        .eight img{
+            width: 100%;
+            height: 100%;
+        }
+        .nine img{
+            width: 100%;
+            height: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Grid Layout</h1>
+    <div class="grid-container">
+        <div class="grid-item one"><img src="../images/image1.jpeg"></div>
+        <div class="grid-item two"><img src="../images/image2.jpeg"></div>
+        <div class="grid-item three"><img src="../images/image3.jpeg"></div>
+        <div class="grid-item four"><img src="../images/image4.jpeg"></div>
+        <div class="grid-item five"><img src="../images/image5.jpeg"></div>
+        <div class="grid-item six"><img src="../images/image6.jpeg"></div>
+        <div class="grid-item seven"><img src="../images/image7.jpeg"></div>
+        <div class="grid-item eight"><img src="../images/image14.jpeg"></div>
+        <div class="grid-item nine"><img src="../images/kerala.jpg"></div>
+
+    </div>
+</body>
+</html>

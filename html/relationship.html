@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Descendent selector */
+        div p{
+            color: brown;           
+        }
+        div>p{
+        color: brown;
+        }
+        /* child selector */
+        
+        /* general sibling selector */
+        div+p {
+        color: magenta ;
+        }
+         /* div~p{
+            color: aqua;
+         } */
+        h1,p {
+            background-color: lavender;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Relationship In CSS</h1>
+    <div>
+        <p>hii</p>
+        <p>Good Morning</p>
+        <section>
+            <p>Iam from India</p>
+            <p>Iam from America</p>
+        </section>
+    </div>
+    <p>Iam from India</p>
+    <p>cdsfdghfj</p>
+    <div>
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+                <ol>
+                    <li>react</li>
+                    <li>angular</li>
+                </ol>
+        </ul>
+        <ul>
+            <li>van</li>
+            <li>bus</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .animation{
+            width: 70px;
+            height: 47px;
+            background-color: #92B901;
+            text-align: center;
+            align-content: center;
+            border-radius: 5px;
+            animation: example 1s 1s 5;
+            position: absolute;
+        }
+        @keyframes example{
+            0%{
+                background-color: blue;
+                
+            }
+            25%{
+                background-color: aqua;
+                left: 200px;
+                transform: rotate(45deg);
+            }
+             50%{
+                background-color: blueviolet;
+                left:400px;
+                transform: rotate(90deg);
+            }
+             75%{
+                background-color: darkgoldenrod;
+                left: 200px;
+                top: 300px;
+                transform: rotate(180deg);
+            }
+            100%{
+                background-color: maroon;
+                left: 0;
+            }  
+
+        }
+    </style>
+</head>
+<body>
+    <div class="animation">
+        Css
+    </div>
+</body>
+</html>
